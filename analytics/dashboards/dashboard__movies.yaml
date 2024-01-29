@@ -1,0 +1,67 @@
+# A dashboard is a collection of visualizations that are organized into sections.
+# Because they allow filtering and other adjustments, they function as a dynamic presentation layer for your data analytics.
+# Read more about dashboards:
+# https://www.gooddata.com/docs/cloud/create-dashboards/concepts/dashboard/
+
+id: dashboard__movies
+type: dashboard
+
+title: Movies
+
+sections:
+  - title: Overview
+    widgets:
+      - visualization: movies__count
+        title: Number of movies
+        columns: 2
+        rows: 10
+      - visualization: movies__avg_rating
+        title: Average movie rating
+        columns: 2
+        rows: 10
+      - visualization: universal__profit
+        title: Total profit
+        columns: 2
+        rows: 10
+      - visualization: universal__martinis-consumed
+        title: Martinis consumed
+        columns: 2
+        rows: 10
+  - title: What has the biggest impact on movie rating
+    widgets:
+      - visualization: movies__kills-vs-rating
+        title: Effect of Bond's casualties on rating
+        columns: 4
+        rows: 22
+      - visualization: movies__martinis-vs-rating
+        title: Effect of Martini on rating
+        columns: 4
+        rows: 22
+      - visualization: movies__lenght-vs-rating
+        title: Effect of movie length on rating
+        columns: 4
+        rows: 22
+  - title: Earnings
+    widgets:
+      - visualization: movies__budget_over_years
+        title: Trend of budget over years
+        columns: 12
+        rows: 22
+      - visualization: movies__movie-profitability
+        title: How profitable are Bond movies
+        columns: 12
+        rows: 22
+      - visualization: movies__earning-vs-budget
+        title: Effect of budget on earnings
+        columns: 6
+        rows: 22
+      - visualization: movies__earnigns-vs-rating
+        title: Effect of rating on earnings
+        columns: 6
+        rows: 22
+
+filters:
+  movies.id.name_6:
+    type: attribute_filter
+    using: label/movies.id.name
+    multiselect: true

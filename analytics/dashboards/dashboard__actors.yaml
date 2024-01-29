@@ -1,0 +1,36 @@
+# A dashboard is a collection of visualizations that are organized into sections.
+# Because they allow filtering and other adjustments, they function as a dynamic presentation layer for your data analytics.
+# Read more about dashboards:
+# https://www.gooddata.com/docs/cloud/create-dashboards/concepts/dashboard/
+
+id: dashboard__actors
+type: dashboard
+
+title: Actors
+
+sections:
+  - widgets:
+      - visualization: actors__duration
+        title: For how long has each actors performed as Bond?
+        columns: 6
+        rows: 22
+      - visualization: actors__number-of-movies
+        title: In how many movies did each actor play?
+        columns: 6
+        rows: 22
+  - title: Most important Bond stats per actor
+    widgets:
+      - visualization: actors__martinis
+        title: How many martinis has each actor drink?
+        columns: 6
+        rows: 22
+      - visualization: actors__kills
+        title: How many hits has each actor had?
+        columns: 6
+        rows: 22
+
+filters:
+  bond_8:
+    type: attribute_filter
+    using: label/bond
+    multiselect: true

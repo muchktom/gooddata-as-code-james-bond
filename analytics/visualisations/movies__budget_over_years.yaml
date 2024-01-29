@@ -1,0 +1,39 @@
+# A visualization is a visual representation of a user’s analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+id: movies__budget_over_years
+type: combo_chart
+
+title: Trend of budget over years
+
+query:
+  fields:
+    budget_normalized:
+      title: Budget Normalized
+      using: metric/budget_normalized
+    sum_of_world_gross_earnings:
+      title: Sum of World gross earnings
+      aggregation: SUM
+      using: fact/worldgross
+    released: label/released
+
+metrics:
+  - field: budget_normalized
+    axis: primary
+  - field: sum_of_world_gross_earnings
+    format: "#,##0.00"
+    axis: secondary
+
+view_by:
+  - released
+
+config:
+  legend_position: top
+  yaxis_primary_max: 1200000000
+  yaxis_secondary_max: 1200000000
+  yaxis_secondary_name_visible: false
+  yaxis_secondary_labels: false

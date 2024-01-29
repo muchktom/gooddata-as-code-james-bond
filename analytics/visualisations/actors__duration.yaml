@@ -1,0 +1,44 @@
+# A visualization is a visual representation of a user’s analytical view of the data.
+# You build visualizations from metrics, attributes, and optionally filters that are combined in a way to visualize a particular aspect of your data.
+# The visualizations are executed over and over as fresh data gets loaded.
+# Interpreting the content of a visualization is up to the user (the consumer of the visualization).
+# Read more about visualisations:
+# https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
+
+id: actors__duration
+type: column_chart
+
+title: For how long has each actors performed as Bond?
+
+query:
+  fields:
+    bond_duration_in_years:
+      title: Bond duration in years
+      using: metric/actors__duration-as-bond
+    bond: label/bond
+    bond_1: label/bond
+
+  sort_by:
+    - type: attribute_sort
+      by: bond
+      direction: ASC
+      aggregation: SUM
+
+metrics:
+  - bond_duration_in_years
+
+view_by:
+  - bond
+
+segment_by:
+  - bond_1
+
+config:
+  colors:
+    Daniel Craig: 1
+    George Lazenby: 2
+    Pierce Brosnan: 3
+    Roger Moore: 4
+    Sean Connery: 5
+    Timothy Dalton: 6
+  legend_enabled: false
