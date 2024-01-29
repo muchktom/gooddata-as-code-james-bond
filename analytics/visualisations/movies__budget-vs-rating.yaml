@@ -5,28 +5,26 @@
 # Read more about visualisations:
 # https://www.gooddata.com/developers/cloud-native/doc/cloud/create-visualizations/concepts/visualization/
 
-id: movies__earnigns-vs-rating
+id: movies__budget-vs-rating
 type: scatter_chart
 
-title: Effect of rating on earnings
+title: Effect of budget on rating
 
 query:
   fields:
-    sum_of_world_gross_earnings_1:
-      title: World gross earnings
-      aggregation: SUM
-      using: fact/worldgross
-    sum_of_avg_user_rating_imdb:
+    rating:
       title: Avg user rating imdb
       aggregation: SUM
       using: fact/avg_user_imdb
-    movies.id.name: label/movies.id.name
+    movie_budget:
+      title: Movie budget
+      using: metric/budget_normalized
+    movies.id.name_1: label/movies.id.name
 
 metrics:
-  - field: sum_of_world_gross_earnings_1
-    format: "#,##0.00"
-  - field: sum_of_avg_user_rating_imdb
-    format: "#,##0.00"
+  - movie_budget
+  - field: rating
+    format: "#,##0"
 
 view_by:
-  - movies.id.name
+  - movies.id.name_1

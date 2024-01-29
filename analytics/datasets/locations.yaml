@@ -9,7 +9,6 @@ id: locations
 table_path: public/locations
 
 title: Locations
-description: Locations
 tags:
   - Locations
 
@@ -27,7 +26,6 @@ fields:
     source_column: id
     data_type: INT
     title: Location_id
-    description: Id
     tags:
       - Locations
 

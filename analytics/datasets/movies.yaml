@@ -21,7 +21,6 @@ fields:
     source_column: bond
     data_type: STRING
     title: Bond
-    description: Bond
     tags:
       - Movies
   bond_car:
@@ -29,7 +28,6 @@ fields:
     source_column: bond_car
     data_type: STRING
     title: Bond car
-    description: Bond car
     tags:
       - Movies
   director:
@@ -37,7 +35,6 @@ fields:
     source_column: director
     data_type: STRING
     title: Director
-    description: Director
     tags:
       - Movies
   movies.id:
@@ -45,7 +42,6 @@ fields:
     source_column: id
     data_type: INT
     title: Movie
-    description: Id
     tags:
       - Movies
     labels:
@@ -61,7 +57,6 @@ fields:
     source_column: released
     data_type: STRING
     title: Released
-    description: Released
     tags:
       - Movies
   avg_user_imdb:
@@ -69,7 +64,6 @@ fields:
     source_column: avg_user_imdb
     data_type: NUMERIC
     title: Avg user rating imdb
-    description: Avg user imdb
     tags:
       - Movies
   avg_user_rtntom:
@@ -77,7 +71,6 @@ fields:
     source_column: avg_user_rtntom
     data_type: NUMERIC
     title: Avg user rating rotten tomatoes
-    description: Avg user rtntom
     tags:
       - Movies
   bjb:
@@ -85,7 +78,6 @@ fields:
     source_column: bjb
     data_type: INT
     title: '# of "Bond, James Bond"'
-    description: Bjb
     tags:
       - Movies
   budget:
@@ -93,7 +85,6 @@ fields:
     source_column: budget
     data_type: INT
     title: Budget
-    description: Budget
     tags:
       - Movies
   killsbond:
@@ -101,7 +92,6 @@ fields:
     source_column: kills_bond
     data_type: INT
     title: "# of kills by bond"
-    description: Kills bond
     tags:
       - Movies
   killsothers:
@@ -109,7 +99,6 @@ fields:
     source_column: kills_others
     data_type: INT
     title: "# of kills by others"
-    description: Kills others
     tags:
       - Movies
   martinis:
@@ -117,7 +106,6 @@ fields:
     source_column: martinis
     data_type: INT
     title: "# of martinis consumed"
-    description: Martinis
     tags:
       - Movies
   movielength:
@@ -125,7 +113,6 @@ fields:
     source_column: movie_length
     data_type: INT
     title: Movie length
-    description: Movie length
     tags:
       - Movies
   movies.age:
@@ -133,7 +120,6 @@ fields:
     source_column: age
     data_type: INT
     title: Age
-    description: Age
     tags:
       - Movies
   usgross:
@@ -141,7 +127,6 @@ fields:
     source_column: us_gross
     data_type: INT
     title: US gross earnings
-    description: Us gross
     tags:
       - Movies
   worldgross:
@@ -149,6 +134,5 @@ fields:
     source_column: world_gross
     data_type: INT
     title: World gross earnings
-    description: World gross
     tags:
       - Movies

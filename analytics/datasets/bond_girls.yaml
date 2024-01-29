@@ -9,7 +9,6 @@ id: bond_girls
 table_path: public/bond_girls
 
 title: Bond girls
-description: Bond girls
 tags:
   - Bond girls
 
@@ -21,7 +20,6 @@ fields:
     source_column: id
     data_type: INT
     title: Bond girl
-    description: Bond girl
     tags:
       - Bond girls
     labels:
@@ -37,7 +35,6 @@ fields:
     source_column: age
     data_type: INT
     title: Age
-    description: Age
     tags:
       - Bond girls
 
