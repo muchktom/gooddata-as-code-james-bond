@@ -25,7 +25,7 @@ sections:
         columns: 6
         rows: 22
       - visualization: actors__kills
-        title: How many hits has each actor had?
+        title: How many casualties has each actor had?
         columns: 6
         rows: 22
 

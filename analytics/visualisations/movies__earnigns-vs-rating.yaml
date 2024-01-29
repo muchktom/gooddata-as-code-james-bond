@@ -17,7 +17,7 @@ query:
       aggregation: SUM
       using: fact/worldgross
     sum_of_avg_user_rating_imdb:
-      title: Avg user rating imdb
+      title: IMDB rating
       aggregation: SUM
       using: fact/avg_user_imdb
     movies.id.name: label/movies.id.name

@@ -31,15 +31,19 @@ sections:
     widgets:
       - visualization: movies__kills-vs-rating
         title: Effect of Bond's casualties on rating
-        columns: 4
+        columns: 6
         rows: 22
       - visualization: movies__martinis-vs-rating
         title: Effect of Martini on rating
-        columns: 4
+        columns: 6
         rows: 22
       - visualization: movies__lenght-vs-rating
         title: Effect of movie length on rating
-        columns: 4
+        columns: 6
+        rows: 22
+      - visualization: movies__budget-vs-rating
+        title: Effect of budget on rating
+        columns: 6
         rows: 22
   - title: Earnings
     widgets:

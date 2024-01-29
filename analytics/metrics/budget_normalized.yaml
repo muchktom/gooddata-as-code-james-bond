@@ -6,7 +6,7 @@
 type: metric
 id: budget_normalized
 
-title: Budget Normalized
+title: Budget
 
 maql: SELECT SUM({fact/budget}*1000)
 format: "#,##0.00"

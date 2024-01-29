@@ -13,7 +13,7 @@ title: Trend of budget over years
 query:
   fields:
     budget_normalized:
-      title: Budget Normalized
+      title: Budget
       using: metric/budget_normalized
     sum_of_world_gross_earnings:
       title: Sum of World gross earnings
