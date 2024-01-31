@@ -12,19 +12,19 @@ title: Effect of budget on earnings
 
 query:
   fields:
-    world_gross_earnings:
+    world_gross_earnings_1:
       title: World gross earnings
       aggregation: SUM
       using: fact/worldgross
     movie_budget:
       title: Movie budget
       using: metric/budget_normalized
-    movies.id.name_1: label/movies.id.name
+    movies.id.name: label/movies.id.name
 
 metrics:
-  - field: world_gross_earnings
+  - field: world_gross_earnings_1
     format: "#,##0.00"
   - movie_budget
 
 view_by:
-  - movies.id.name_1
+  - movies.id.name

@@ -16,7 +16,7 @@ query:
       title: Length of a movie
       aggregation: SUM
       using: fact/movielength
-    avg_imdb_rating_2:
+    imdb_rating_3:
       title: IMDB rating
       aggregation: SUM
       using: fact/avg_user_imdb
@@ -25,7 +25,7 @@ query:
 metrics:
   - field: length_of_a_movie
     format: "#,##0"
-  - field: avg_imdb_rating_2
+  - field: imdb_rating_3
     format: "#,##0.0"
 
 view_by:

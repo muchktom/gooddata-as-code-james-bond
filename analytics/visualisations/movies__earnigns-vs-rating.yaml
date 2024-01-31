@@ -12,21 +12,21 @@ title: Effect of rating on earnings
 
 query:
   fields:
-    sum_of_world_gross_earnings_1:
+    world_gross_earnings:
       title: World gross earnings
       aggregation: SUM
       using: fact/worldgross
-    sum_of_avg_user_rating_imdb:
+    imdb_rating_1:
       title: IMDB rating
       aggregation: SUM
       using: fact/avg_user_imdb
-    movies.id.name: label/movies.id.name
+    movies.id.name_1: label/movies.id.name
 
 metrics:
-  - field: sum_of_world_gross_earnings_1
+  - field: world_gross_earnings
     format: "#,##0.00"
-  - field: sum_of_avg_user_rating_imdb
+  - field: imdb_rating_1
     format: "#,##0.00"
 
 view_by:
-  - movies.id.name
+  - movies.id.name_1

@@ -12,8 +12,8 @@ title: For how long has each actors performed as Bond?
 
 query:
   fields:
-    bond_duration_in_years:
-      title: Bond duration in years
+    how_many_years_an_actor_spends_as_bond:
+      title: How many years an actor spends as Bond
       using: metric/actors__duration-as-bond
     bond: label/bond
     bond_1: label/bond
@@ -25,7 +25,7 @@ query:
       aggregation: SUM
 
 metrics:
-  - bond_duration_in_years
+  - how_many_years_an_actor_spends_as_bond
 
 view_by:
   - bond
@@ -41,4 +41,6 @@ config:
     Roger Moore: 4
     Sean Connery: 5
     Timothy Dalton: 6
+  data_labels: false
+  data_totals: true
   legend_enabled: false

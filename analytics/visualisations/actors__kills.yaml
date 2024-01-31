@@ -13,7 +13,7 @@ title: How many hits has each actor had?
 query:
   fields:
     sum_of___of_kills_by_bond:
-      title: "Sum of # of kills by bond"
+      title: "# of kills by Bond"
       aggregation: SUM
       using: fact/killsbond
     bond_2: label/bond
@@ -43,4 +43,6 @@ config:
     Roger Moore: 4
     Sean Connery: 5
     Timothy Dalton: 6
+  data_labels: false
+  data_totals: true
   legend_enabled: false

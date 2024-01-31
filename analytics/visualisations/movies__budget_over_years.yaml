@@ -12,7 +12,7 @@ title: Trend of budget over years
 
 query:
   fields:
-    budget_normalized:
+    budget:
       title: Budget
       using: metric/budget_normalized
     sum_of_world_gross_earnings:
@@ -22,7 +22,7 @@ query:
     released: label/released
 
 metrics:
-  - field: budget_normalized
+  - field: budget
     axis: primary
   - field: sum_of_world_gross_earnings
     format: "#,##0.00"

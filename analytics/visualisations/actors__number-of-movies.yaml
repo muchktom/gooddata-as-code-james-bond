@@ -13,7 +13,7 @@ title: In how many movies did each actor play?
 query:
   fields:
     count_of_movie:
-      title: Count of Movie
+      title: "# of movies"
       aggregation: COUNT
       using: attribute/movies.id
     bond_6: label/bond
@@ -43,4 +43,6 @@ config:
     Roger Moore: 4
     Sean Connery: 5
     Timothy Dalton: 6
+  data_labels: false
+  data_totals: true
   legend_enabled: false

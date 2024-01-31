@@ -13,7 +13,7 @@ title: How many martinis has each actor drink?
 query:
   fields:
     sum_of___of_martinis_consumed:
-      title: "Sum of # of martinis consumed"
+      title: "# of martinis consumed"
       aggregation: SUM
       using: fact/martinis
     bond_4: label/bond
@@ -43,4 +43,6 @@ config:
     Roger Moore: 4
     Sean Connery: 5
     Timothy Dalton: 6
+  data_labels: false
+  data_totals: true
   legend_enabled: false

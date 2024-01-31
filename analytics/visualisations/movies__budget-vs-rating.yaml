@@ -12,19 +12,19 @@ title: Effect of budget on rating
 
 query:
   fields:
-    rating:
-      title: IMDB rating
-      aggregation: SUM
-      using: fact/avg_user_imdb
     movie_budget:
       title: Movie budget
       using: metric/budget_normalized
-    movies.id.name_1: label/movies.id.name
+    imdb_rating:
+      title: IMDB rating
+      aggregation: SUM
+      using: fact/avg_user_imdb
+    movies.id.name: label/movies.id.name
 
 metrics:
   - movie_budget
-  - field: rating
+  - field: imdb_rating
     format: "#,##0.0"
 
 view_by:
-  - movies.id.name_1
+  - movies.id.name

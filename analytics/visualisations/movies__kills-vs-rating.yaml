@@ -16,7 +16,7 @@ query:
       title: Bond's causalities
       aggregation: SUM
       using: fact/killsbond
-    avg_imdb_rating_1:
+    imdb_rating_2:
       title: IMDB rating
       aggregation: SUM
       using: fact/avg_user_imdb
@@ -25,7 +25,7 @@ query:
 metrics:
   - field: bond_s_causalities
     format: "#,##0"
-  - field: avg_imdb_rating_1
+  - field: imdb_rating_2
     format: "#,##0.0"
 
 view_by:

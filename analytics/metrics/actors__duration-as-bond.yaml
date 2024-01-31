@@ -6,7 +6,7 @@
 type: metric
 id: actors__duration-as-bond
 
-title: How many years an actor spends as Bond
+title: Years as Bond
 
 maql: |-
   SELECT IF (
