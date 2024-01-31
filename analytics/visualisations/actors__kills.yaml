@@ -12,7 +12,7 @@ title: How many hits has each actor had?
 
 query:
   fields:
-    sum_of___of_kills_by_bond:
+    __of_kills_by_bond:
       title: "# of kills by Bond"
       aggregation: SUM
       using: fact/killsbond
@@ -26,7 +26,7 @@ query:
       aggregation: SUM
 
 metrics:
-  - field: sum_of___of_kills_by_bond
+  - field: __of_kills_by_bond
     format: "#,##0"
 
 view_by:

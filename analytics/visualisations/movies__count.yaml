@@ -12,11 +12,11 @@ title: "# of movies"
 
 query:
   fields:
-    __of_movies:
+    __of_movies_1:
       title: "# of movies"
       aggregation: COUNT
       using: attribute/movies.id
 
 metrics:
-  - field: __of_movies
+  - field: __of_movies_1
     format: "#,##0"

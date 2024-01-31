@@ -65,7 +65,12 @@ sections:
         rows: 22
 
 filters:
+  date_year:
+      type: date_filter
+      granularity: YEAR
+      from: 0
+      to: 0
+      mode: hidden
   movies.id.name_6:
     type: attribute_filter
     using: label/movies.id.name
-    multiselect: true

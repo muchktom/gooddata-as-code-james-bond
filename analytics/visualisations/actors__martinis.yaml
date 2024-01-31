@@ -12,7 +12,7 @@ title: How many martinis has each actor drink?
 
 query:
   fields:
-    sum_of___of_martinis_consumed:
+    __of_martinis_consumed:
       title: "# of martinis consumed"
       aggregation: SUM
       using: fact/martinis
@@ -26,7 +26,7 @@ query:
       aggregation: SUM
 
 metrics:
-  - field: sum_of___of_martinis_consumed
+  - field: __of_martinis_consumed
     format: "#,##0"
 
 view_by:

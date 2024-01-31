@@ -12,7 +12,7 @@ title: Movies by country
 
 query:
   fields:
-    __of_movies_1:
+    __of_movies_2:
       title: "# of movies"
       aggregation: COUNT
       using: attribute/movies.id
@@ -22,10 +22,10 @@ query:
     - type: metric_sort
       direction: DESC
       metrics:
-        - __of_movies_1
+        - __of_movies_2
 
 metrics:
-  - field: __of_movies_1
+  - field: __of_movies_2
     format: "#,##0"
 
 view_by:

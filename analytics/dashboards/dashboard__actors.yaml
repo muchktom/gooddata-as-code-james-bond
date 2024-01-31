@@ -30,7 +30,12 @@ sections:
         rows: 22
 
 filters:
+  date_year:
+    type: date_filter
+    granularity: YEAR
+    from: 0
+    to: 0
+    mode: hidden
   bond_8:
     type: attribute_filter
     using: label/bond
-    multiselect: true
